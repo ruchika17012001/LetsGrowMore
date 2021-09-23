@@ -1,0 +1,85 @@
+.lgmuserCard {
+    width: 100%;
+    height: 31rem;
+    /* border-radius: 20px; */
+    
+    background-color: #212529;
+    border:  5px solid whitesmoke; 
+}
+.lgmuserimg {
+    border: 5px solid black;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 92px;
+    width: 50%;
+    height: 200px;
+}
+
+.lgmuserCard-box {
+    margin: 10px;
+    text-align: center;
+}
+
+.lgmuserCard-box h3 {
+    color: whitesmoke;
+    font-weight: 800;
+    /* color: black; */
+}
+
+.lgmuserCard-box p{
+    color: whitesmoke;
+}
+
+.lgmuserCard-box h6{
+    color: whitesmoke;
+}
+
+.lgmuserCard-box p {
+    font-size: 20px;
+    font-weight: 600;
+    opacity: .9;
+    
+}
+.lgmuserCard-box h6 {
+    font-size: 20px;
+    font-weight: 700;
+    opacity: .9;
+    cursor: pointer;
+}
+.btndetail {
+    background-color: rgb(248, 48, 48);
+    width: 80%;
+    padding: 15px;
+    text-align: center;
+    border: 0.2rem solid whitesmoke;
+    transition: 0.5s;
+    background-size: 100% auto;
+    color:black;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    z-index: 0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.btndetail::before{
+    content: '';
+    position: absolute;
+    top:0; right: 0;
+    width:0%;
+    height:100%;
+    background: rgb(24, 24, 151);
+    z-index: -1;
+}
+
+.btndetail:hover::before{
+    width:100%;
+    left: 0;
+}
+.btndetail:hover {
+    background-position: right center;
+    color: black;
+    text-decoration: none;
+    color:#fff;
+}
